@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Example Read File from Local Storage</title>
+
+		<link rel="stylesheet" href="libs/bootstrap-3.2.0-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="libs/bootstrap-3.2.0-dist/css/bootstrap-theme.css">
+		<link rel="stylesheet" href="css/generalStyles.css">
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Read File: 'data.json'</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<button id="readFile" class="btn btn-primary navbar-btn">
+						Read File
+					</button>
+					<p id="textLoading" class="navbar-text navbar-right">
+						Loading File...
+					</p>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="alert alert-warning alert-dismissible" role="alert">
+						<button type="button" class="close" data-dismiss="alert">
+							<span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span>
+						</button>
+						<strong>¡Atención!</strong> Las celdas que tienen un "-" (guión), significa que dicha palabra no se encuentra disponible.
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+
+					<table class="table table-bordered">
+						<thead id="containerHead">
+							<th>#</th>
+							<th>Labels</th>
+
+						</thead>
+						<tbody id="containerBody">
+
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+
+		<script src="libs/jquery-2.1.1.js"></script>
+		<script src="libs/underscore.js"></script>
+		<script src="libs/bootstrap-3.2.0-dist/js/bootstrap.js"></script>
+		<script src="js/readData.js"></script>
+	</body>
+</html>

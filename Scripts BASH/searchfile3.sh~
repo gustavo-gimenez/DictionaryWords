@@ -1,0 +1,19 @@
+#!/bin/bash
+if [ -f /home/likewise-open/GLOBANT/leandro.maro/resultados.txt ]; then
+rm /home/likewise-open/GLOBANT/leandro.maro/resultados.txt
+fi
+find . -type f -name *.$1 -exec sh -c '
+  for f do
+    while read p; 
+    do
+    #aca va la logica para JSON
+    echo "$p" | grep -o "%%\<.*\>%%" >> /home/likewise-open/GLOBANT/leandro.maro/resultados.txt
+    done <$f
+  done
+cat /home/likewise-open/GLOBANT/leandro.maro/resultados.txt | sort | uniq > /home/likewise-open/GLOBANT/leandro.maro/pass-listos.txt	
+echo Los Resultados estan en ~/pass-listos.txt
+' sh {} +
+
+
+
+

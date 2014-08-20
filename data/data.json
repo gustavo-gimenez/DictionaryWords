@@ -1,0 +1,41 @@
+{
+	"words": [
+		{
+			"label": "%%Example_Titulo_Label%%",
+			"wordLanguage": {
+				"es_ar": "Título",
+				"es_cl": "Título",
+				"es_co": "Título",
+				"es_ec": "Título",
+				"es_pe": "Título",
+				"es_uy": "Título",
+				"es_us": "Título",
+				"es_mx": "Título",
+				"es_un": "Título",
+				"es_py": "Título",
+				"es_es": "Título",
+				"en_us": "Title",
+				"en_ca": "Title",
+				"en_uk": "Title",
+				"en_ue": "Title",
+				"en_au": "Title",
+				"en_zn": "Title",
+				"en_un": "Title",
+				"de_de": "Titel",
+				"fr_fr": "Titre",
+				"it_it": "Titolo",
+				"pt_br": "Título",
+				"pt_us": "Título"
+			}
+		},
+		{
+			"label": "%%Example_OTRO_Label%%",
+			"wordLanguage": {
+				"en_zn": "Title"
+			}
+		}
+	],
+
+	"languages": ["es_ar", "es_cl", "es_co", "es_ec", "es_pe", "es_uy", "es_us", "es_mx", "es_un", "es_py", "es_es", "en_us", "en_ca", "en_uk", "en_ue", "en_au", "en_zn", "en_un", "de_de", "fr_fr", "it_it", "pt_br", "pt_us"]
+}
+
